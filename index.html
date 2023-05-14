@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập JS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <h2>BÀI TẬP 1 :TÍNH LƯƠNG NHÂN VIÊN</h2>
+    <div class="form-group">
+        <input id="workingday" type="so-ngay-lam" placeholder="Số ngày làm" class="form-control w-25">
+        <input id="salaryperday" type="luong-1-ngay" placeholder="lương 1 ngày" class="form-control w-25">
+    </div>
+    <br>
+    <button onclick="tinhtongluong()" id="salary" class="btn btn-success">TÍNH LƯƠNG</button>
+    <br>
+    <div class="mt-5 alert alert-success">
+        <H3>TỔNG LƯƠNG : <span id="tongluong"></span></H3>
+    </div>
+    <br><br>
+
+    <!-- ******************************* -->
+    <h2>BÀI TẬP 2 :TÍNH GIÁ TRỊ TRUNG BÌNH </h2>
+    <div class="form-group">
+        <input id="number1" type="number-1" placeholder="Số thực 1" class="form-control w-25">
+        <input id="number2" type="number-2" placeholder="Số thực 2" class="form-control w-25">
+        <input id="number3" type="number-3" placeholder="Số thực 3" class="form-control w-25">
+        <input id="number4" type="number-4" placeholder="Số thực 4" class="form-control w-25">
+        <input id="number5" type="number-5" placeholder="Số thực 5" class="form-control w-25">
+    </div>
+    <br>
+    <button onclick="tinhgiatritrungbinh()" id="giatritrungbinh" class="btn btn-success">GIÁ TRỊ TRUNG BÌNH</button>
+    <br>
+    <div class="mt-5 alert alert-success">
+        <H3>GIÁ TRỊ TRUNG BÌNH 5 SỐ THỰC LÀ : <span id="trungbinh"></span></H3>
+    </div>
+    <!-- ******************************* -->
+    <h2>BÀI TẬP 3 : QUY ĐỔI TIỀN </h2>
+    <div class="form-group">
+        <input id="usd" type="usd" placeholder="Tiền USD" class="form-control w-25">
+        <input id="tigiausd" type="tigiausd" placeholder="Tỉ Giá USD" class="form-control w-25">
+    </div>
+    <button onclick="quydoi()" id="quydoi" class="btn btn-success">QUY ĐỔI</button>
+    <br>
+    <div class="mt-5 alert alert-success">
+        <H3>QUY ĐỔI RA TIỀN VNĐ LÀ : <span id="xuatravnd"></span></H3>
+    </div>
+    <!-- ******************************* -->
+    <h2>BÀI TẬP 4 : TÍNH DIỆN TÍCH, CHU VI HÌNH CHỮ NHẬT </h2>
+    <div class="form-group">
+        <input id="chieudai" type="chieudai" placeholder="Chiều Dài" class="form-control w-25">
+        <input id="chieurong" type="chieurong" placeholder="Chiều Rộng" class="form-control w-25">
+    </div>
+    </div>
+    <button onclick="dientich()" id="dientich" class="btn btn-success">DIỆN TÍCH</button>
+    <br>
+    <div class="mt-5 alert alert-success">
+        <H3>DIỆN TÍCH LÀ : <span id="xuatradientich"></span></H3>
+    </div>
+    </div>
+    <button onclick="chuvi()" id="chuvi" class="btn btn-success">CHU VI</button>
+    <br>
+    <div class="mt-5 alert alert-success">
+        <H3>CHU VI LÀ : <span id="xuatrachuvi"></span></H3>
+    </div>
+    <!-- ******************************* -->
+    <h2>BÀI TẬP 5 : TÍNH TỔNG 2 KÝ SÔ </h2>
+    <div class="form-group">
+        <input id="kyso" type="kyso" placeholder="Nhập vào số có 2 chữ số" class="form-control w-25"><br>
+        <button class="btn btn-success" id="btnTotal">TỔNG 2 KÝ SỐ</button>
+    </div>
+    <div class="mt-5 alert alert-success">
+        <H3>TỔNG LÀ : <span id="xuatratong"></span></H3>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
